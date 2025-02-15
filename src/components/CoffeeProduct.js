@@ -29,15 +29,18 @@ const CoffeeProducts = () => {
   ];
 
   return (
-    <section className="bg-gray-50 py-12 sm:h-screen">
-      <div className="text-center mb-8 xl:mx-[60px]">
-        <h2 className="text-2xl md:text-3xl font-bold">
+    <section className="bg-gray-50 py-12 sm:h-screen font-bold">
+      <div className="text-center mb-8 xl:mx-[60px] ">
+        <h2 className="text-2xl md:text-3xl 1">
           Morbi eu varius neque, a ultricies sem.
         </h2>
         <p className="text-gray-600 max-w-2xl mx-auto">
-          Fusce vitae convallis mi. Etiam dictum arcu posuere mauris{" "}
-          <span className="text-green-600 font-bold">semper accumsan</span>.
+          Fusce vitae convallis mi. Etiam dictum arcu posuere mauris
+          <span className="text-green-600 ">semper accumsan</span>.
         </p>
+      </div>
+      <div>
+        <img src="Coffee21.png" alt="coffee-21"/>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-4">

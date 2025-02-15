@@ -1,52 +1,14 @@
 import React from "react";
-
-const coffeeTypes = [
-  {
-    id: "01",
-    name: "Arabica Green",
-    description: "Curabitur semper erat a lacus consequat, sit amet quam convallis.",
-  },
-  {
-    id: "02",
-    name: "Arabica Roasted",
-    description: "Praesent at faucibus justo, eu semper massa viverra luctus.",
-  },
-  {
-    id: "03",
-    name: "Robusta Roasted",
-    description: "Fusce venenatis ante ac interdum faucibus proin nunc.",
-  },
-  {
-    id: "04",
-    name: "Mixed Sorts",
-    description: "Aenean hendrerit ligula ut facilisis convallis gravida suscipit.",
-  },
-];
-
+import Icon from "../components/Icon";
 const CoffeeTypes = () => {
   return (
-    <section className="pt-24 lg:mb-[-5.1rem] md:mb-[-5rem]  bg-white ">
-      <div className=" mx-auto px-4 xl:mx-[40px]">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 xl:mx-[60px]">
-          {coffeeTypes.map((type) => (
-            <div
-              key={type.id}
-              className="bg-black text-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
-            >
-              <div className="text-[#4D7F43] text-xl mb-4">{type.id}</div>
-              <h3 className="text-2xl font-bold mb-4">{type.name}</h3>
-              <p className="text-gray-400">{type.description}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <section className="flex flex-wrap items-center justify-center px-6 py-12 lg:px-16 lg:py-24 bg-white my-20  xl:mx-[60px]">
+    <section className="pt-10 lg:mb-[-5.1rem] md:mb-[-5rem]  bg-white ">
+      <section className="flex flex-wrap items-center justify-center px-6 py-12 lg:px-16 lg:py-24 bg-white my-10  xl:mx-[60px]">
       {/* Left Features */}
       <div className="w-full lg:w-1/3 flex flex-col items-start space-y-12 ">
         <div className="flex items-center space-x-4">
-          <div className="w-20 h-10 rounded-full mb-10">
-          <img src="Coffee12.jpg" alt="Coffee5 images" className="w-full h-full"/>
+          <div className="w-20 h-10  mb-10">
+          <Icon name=" icon-Coffee1-icon" className="text-5xl text-[#006242] font-thin" />
           </div>
           <div>
             <h3 className="text-xl font-bold">Pure Grades</h3>
@@ -56,8 +18,8 @@ const CoffeeTypes = () => {
           </div>
         </div>
         <div className="flex items-center space-x-4">
-          <div className=" rounded-full mb-10 w-20 h-10">
-          <img src="Coffee16.png" alt="Coffee5 images"/>
+          <div className="  mb-10 w-20 h-10">
+         <Icon name="icon-Coffee2-icon" className="text-5xl text-[#006242] font-black" />
           </div>
           <div>
             <h3 className="text-xl font-bold">Wide Assortment</h3>
@@ -67,8 +29,8 @@ const CoffeeTypes = () => {
           </div>
         </div>
         <div className="flex items-center space-x-4">
-          <div className=" rounded-full mb-10 w-20 h-10">
-          <img src="Coffee5.png" alt="Coffee5 images"/>
+          <div className=" mb-10 w-20 h-10">
+          <Icon name="icon-Coffee3-icon" className="text-5xl text-[#006242] font-thin"  />
           </div>
           <div>
             <h3 className="text-xl font-bold">Proper Roasting</h3>
@@ -97,8 +59,8 @@ const CoffeeTypes = () => {
               Maecenas dapibus mattis eros, at fermentum sapien malesuada sit amet. Quisque in sollicitudin eros.
             </p>
           </div>
-          <div className="border-2 border-green-600 rounded-full mb-10 w-20 h-10">
-            <img src="Coffee14.png" alt="Coffee5 images"/>
+          <div className=" rounded-full mb-10 w-20 h-10">
+          <Icon name="icon-Coffee5-icon" className="text-6xl text-[#006242]"  />
           </div>
         </div>
         <div className="flex items-center space-x-4">
@@ -108,8 +70,8 @@ const CoffeeTypes = () => {
               Maecenas dapibus mattis eros, at fermentum sapien malesuada sit amet. Quisque in sollicitudin eros.
             </p>
           </div>
-          <div className="border-2 border-green-600 rounded-full mb-10 w-20 h-10">
-          <img src="Coffee19.png" alt="Coffee2 Images" />
+          <div className=" rounded-full mb-10 w-20 h-10">
+          <Icon name="icon-2024197" className="text-6xl text-[#006242]"  />
           </div>
         </div>
         <div className="flex items-center space-x-4">
@@ -119,8 +81,8 @@ const CoffeeTypes = () => {
               Maecenas dapibus mattis eros, at fermentum sapien malesuada sit amet. Quisque in sollicitudin eros.
             </p>
           </div>
-          <div className="border-2 border-green-600 rounded-full mb-10 w-20 h-10">
-          <img src="Coffee13.png" alt="Coffee5 images"/>
+          <div className=" rounded-full mb-10 w-20 h-10">
+          <Icon name="icon-Coffee4-icon" className="text-6xl text-[#006242]"  />
           </div>
         </div>
       </div>

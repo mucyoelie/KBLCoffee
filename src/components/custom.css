@@ -1,0 +1,11 @@
+/* Style to blur the background */
+.blur-background {
+   
+    pointer-events: none; /* Prevent interaction with blurred content */
+  }
+  
+  /* Lock scroll */
+  .lock-scroll {
+    overflow: hidden;
+  }
+  

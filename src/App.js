@@ -9,6 +9,7 @@ import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 
+
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -16,7 +17,7 @@ function App() {
     // Simulate a delay for loading (e.g., fetching data)
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 5000); // 2 seconds
+    }, 3000); // 2 seconds
     return () => clearTimeout(timer);
   }, []);
 
@@ -24,7 +25,7 @@ function App() {
     return <LoadingSpinner />;
   }
   return (
-    <div className="w-full h-full overflow-x-hidden">
+    <div className="w-full h-full overflow-x-hidden  font-raleway">
     <Router>
       <Navbar />
       <Routes>

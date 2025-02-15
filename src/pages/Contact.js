@@ -9,7 +9,7 @@ const Contact= () => {
         phone:'',
         message: '',
     });
-    const [isSent, setIsSent] = useState(false);
+    const [isSent] = useState(false);
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -19,7 +19,7 @@ const Contact= () => {
   
       // Call EmailJS send function
       emailjs
-        .sendForm("service_aik7uq7", "mucyoelie84@gmail.com", e.target, "52dm6uzigMPT3hDqZ") // Replace with your actual IDs
+        .sendForm("service_aik7uq7", "mucyoelie84@gmail.com", e.target, "52dm6uzigMPT3hDqZ")
         .then(
           (result) => {
             alert("Message Sent Successfully!");
@@ -33,17 +33,16 @@ const Contact= () => {
     };
 
     return (
-        <div className="w-full mx-auto my-40 p-6 bg-white shadow-sm rounded-md flex flex-col lg:flex-row gap-8">
+        <div className="w-full mx-auto md:mt-40 xl:mt-60 mb-20 mt-60 sm:mt-[40rem] p-6 bg-white shadow-sm rounded-md flex flex-col flex-col-reverse xl:flex-row lg:flex-row gap-8 font-medium">
         {/* Form Section */}
-        <div className="lg:w-2/3 mx-[70px]">
-          <h2 className="text-2xl font-bold mb-4 text-start">Contact Us</h2>
+        <div className="lg:w-2/3 w-full px-4 sm:px-10 md:px-16 mx-auto">
           {isSent && (
             <p className="text-green-500 text-center mb-4">
               Thank you! Your message has been sent.
             </p>
           )}
           <form onSubmit={handleSubmit}>
-            <div className="mb-4">
+            <div className="mb-4 w-full">
               <label
                 htmlFor="name"
                 className="block text-sm font-medium text-gray-700"
@@ -113,7 +112,7 @@ const Contact= () => {
             </div>
             <button
               type="submit"
-              className="w-40 bg-[#4D7F43] text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-200"
+              className="w-40 bg-[#006242] text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-200"
             >
               Send Message
             </button>
@@ -121,9 +120,9 @@ const Contact= () => {
         </div>
       
         {/* Information Section */}
-        <div className="lg:w-1/3  p-6 rounded-md shadow-sm flex flex-col justify-center h-[60vh] my-10">
+        <div className="lg:w-1/3  p-6 rounded-md  flex flex-col justify-center xl:h-[60vh] md:h-[30vh] sm:h-[20vh] h-[40vh] my-10  xl:my-10 ">
         <div className='space-y-8 mb-40'>
-          <h1 className="text-6xl font-bold">Get in Touch with KBL Coffee</h1>
+          <h1 className="text-6xl font-bold text-[#006242]">Get in Touch with KBL Coffee</h1>
           <p className="text-gray-700 text-base ">
             Consectetur numquam poro nemo veniam eligendi rem adipisci quo modi.
           </p>
@@ -183,7 +182,7 @@ const Contact= () => {
         <div className="fixed bottom-8 right-8">
         <button 
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="bg-[#003366] text-white p-4 rounded-full hover:bg-gray-800 transition-colors"
+          className="bg-[#006242] text-white p-4 rounded-full hover:bg-gray-800 transition-colors"
         >
           GO TOP
         </button>

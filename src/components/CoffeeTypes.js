@@ -12,8 +12,8 @@ const CoffeeTypes = () => {
           </div>
           <div>
             <h3 className="text-xl font-bold">Pure Grades</h3>
-            <p className="text-gray-600">
-              Maecenas dapibus mattis eros, at fermentum sapien malesuada sit amet. Quisque in sollicitudin eros.
+            <p className="text-gray-600 text-lg">
+            We select only the finest, defect-free beans to ensure top-tier quality in every batch.
             </p>
           </div>
         </div>
@@ -23,19 +23,19 @@ const CoffeeTypes = () => {
           </div>
           <div>
             <h3 className="text-xl font-bold">Wide Assortment</h3>
-            <p className="text-gray-600">
-              Cras ut nisl ac sapien interdum scelerisque sed in elit rutrum in massa sed congue eget turpis ligula.
+            <p className="text-gray-600 text-lg">
+            From bold espressos to smooth light roasts, we offer a diverse range for every coffee lover.
             </p>
           </div>
         </div>
         <div className="flex items-center space-x-4">
           <div className=" mb-10 w-20 h-10">
-          <Icon name="icon-Coffee3-icon" className="text-5xl text-[#006242] font-thin"  />
+          <Icon name="icon-Coffee4-icon " className="text-5xl text-[#006242] font-thin"  />
           </div>
           <div>
             <h3 className="text-xl font-bold">Proper Roasting</h3>
-            <p className="text-gray-600">
-              Proin non vulputate diam, ut varius orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <p className="text-gray-600 text-lg">
+            Expert roasting techniques enhance each bean’s unique flavor, aroma, and balance.
             </p>
           </div>
         </div>
@@ -55,8 +55,8 @@ const CoffeeTypes = () => {
         <div className="flex items-center space-x-4">
           <div>
             <h3 className="text-xl font-bold">High Quality</h3>
-            <p className="text-gray-600">
-              Maecenas dapibus mattis eros, at fermentum sapien malesuada sit amet. Quisque in sollicitudin eros.
+            <p className="text-gray-600 text-lg">
+            Every cup meets the highest standards, delivering a consistently rich and satisfying experience.
             </p>
           </div>
           <div className=" rounded-full mb-10 w-20 h-10">
@@ -66,8 +66,8 @@ const CoffeeTypes = () => {
         <div className="flex items-center space-x-4">
           <div>
             <h3 className="text-xl font-bold">Excellent Grinding</h3>
-            <p className="text-gray-600">
-              Maecenas dapibus mattis eros, at fermentum sapien malesuada sit amet. Quisque in sollicitudin eros.
+            <p className="text-gray-600 text-lg">
+            Precision grinding ensures the perfect texture for espresso, French press, and drip coffee.
             </p>
           </div>
           <div className=" rounded-full mb-10 w-20 h-10">
@@ -77,12 +77,12 @@ const CoffeeTypes = () => {
         <div className="flex items-center space-x-4">
           <div>
             <h3 className="text-xl font-bold">Awesome Aroma</h3>
-            <p className="text-gray-600">
-              Maecenas dapibus mattis eros, at fermentum sapien malesuada sit amet. Quisque in sollicitudin eros.
+            <p className="text-gray-600 text-lg">
+            Freshly roasted beans retain their natural fragrance, filling your cup with delightful aromas.
             </p>
           </div>
           <div className=" rounded-full mb-10 w-20 h-10">
-          <Icon name="icon-Coffee4-icon" className="text-6xl text-[#006242]"  />
+          <Icon name="icon-Coffee3-icon" className="text-6xl text-[#006242]"  />
           </div>
         </div>
       </div>

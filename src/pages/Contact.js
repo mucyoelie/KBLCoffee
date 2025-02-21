@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaWhatsapp, FaLinkedin, FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaWhatsapp, FaLinkedin, FaTiktok,FaInstagram } from "react-icons/fa";
 import emailjs from '@emailjs/browser';
 
 const Contact= () => {
@@ -19,7 +19,7 @@ const Contact= () => {
   
       // Call EmailJS send function
       emailjs
-        .sendForm("service_aik7uq7", "mucyoelie84@gmail.com", e.target, "52dm6uzigMPT3hDqZ")
+        .sendForm("service_77uejgm", "bwanakweli4ever", e.target, "T0pFpR16bzX1qUc5n")
         .then(
           (result) => {
             alert("Message Sent Successfully!");
@@ -129,7 +129,7 @@ const Contact= () => {
           <div className='grid grid-cols-5 gap-5'>
            {/* WhatsApp */}
       <a
-        href="https://wa.me/250787490069"
+        href="https://wa.me/250787255672"
         target="_blank"
         rel="noopener noreferrer"
         className="text-green-500 text-3xl hover:text-green-600 transition hover:rounded-full"
@@ -147,29 +147,18 @@ const Contact= () => {
         <FaLinkedin />
       </a>
 
-      {/* Facebook */}
+      {/* Tiktok */}
       <a
-        href="https://www.facebook.com/yourprofile"
+        href="https://https://www.tiktok.com/@kbl.coffee"
         target="_blank"
         rel="noopener noreferrer"
         className="text-blue-500 text-3xl hover:text-blue-600 transition"
       >
-        <FaFacebook />
+        <FaTiktok />
       </a>
-
-      {/* Twitter */}
-      <a
-        href="https://twitter.com/yourprofile"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-blue-400 text-3xl hover:text-blue-500 transition"
-      >
-        <FaTwitter />
-      </a>
-
       {/* Instagram */}
       <a
-        href="https://www.instagram.com/yourprofile"
+        href="https://www.instagram.com/kbl.coffee/"
         target="_blank"
         rel="noopener noreferrer"
         className="text-pink-500 text-3xl hover:text-pink-600 transition"
@@ -182,7 +171,7 @@ const Contact= () => {
         <div className="fixed bottom-8 right-8">
         <button 
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="bg-[#006242] text-white p-4 rounded-full hover:bg-gray-800 transition-colors"
+          className="bg-[#006242] text-white p-4 rounded-full hover:bg-green-600 transition-colors"
         >
           GO TOP
         </button>

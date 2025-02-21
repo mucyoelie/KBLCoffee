@@ -8,7 +8,7 @@ import Global from "../components/Parters";
 
 function Home() {
   return (
-    <div id="home" className="relative font-medium">
+    <div id="home" className="relative font-medium text-xl">
       {/* Video Section */}
       <div className="relative w-full h-[88vh] md:h-[70vh] lg:h-[60vh] xl:h-[70vh] 2xl:h-screen">
         <video
@@ -20,18 +20,18 @@ function Home() {
         />
         {/* Overlay Section */}
         <div className="absolute inset-0 flex flex-col justify-center items-left text-start p-6">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-white xl:mx-[60px]">
-            <span className="text-[#006242] block">Welcome to</span> KBL Coffee
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white xl:mx-[60px]">
+            <span className="text-[#006242] block text-6xl">More Than Coffee,</span>A Lasting Impact
           </h1>
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-200 mt-4 xl:mx-[60px] w-full">
-          Curabitur imperdiet varius lacus, id placerat purus vulputate non.<br/>
-          Fusce in felis vel arcu maximus placerat eu ut arcu.Ut nunc ex,<br/>
-         gravida vel porttitor et,pretium ac sapien.
+          <p className="text-lg sm:text-base md:text-lg xl:text-xl lg:text-xl text-gray-200 mt-4 xl:mx-[60px] w-full">
+          Experience the true essence of Rwandan coffee<br/><span className="text-[#006242]">—sustainably sourced,</span><br/>expertly roasted,and crafted for perfection. <br/>Every cup tells a story of
+             quality and passion.<br/>
+     
            
           </p>
           {/* Button */}
           <a href="/contact">
-            <button className="mt-6 bg-[#006242] text-white px-6 py-3 rounded-lg hover:bg-gray-500 transition xl:mx-[60px]">
+            <button className="mt-6 bg-[#006242] text-white px-6 py-3 rounded-lg hover:bg-green-600 transition xl:mx-[60px]">
               Contact Us
             </button>
           </a>

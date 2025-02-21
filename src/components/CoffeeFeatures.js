@@ -32,13 +32,13 @@ const CoffeeProductCard = () => {
   return (
     <div className="max-w-7xl mx-auto p-4 md:p-8 flex flex-col lg:flex-row gap-8 items-center lg:items-start">
       {/* Left side - Image */}
-      <div className="relative w-full lg:w-1/2 flex justify-center lg:justify-end xl:right-40">
-        <img
-          src="CoffeeBag.png"
-          alt="Ethiopia Arabica Coffee Package"
-          className="w-full max-w-[300px] md:max-w-[400px] h-auto rounded-lg"
-        />
-      </div>
+      <div className="relative w-[80%] h-[80vh] flex justify-center -top-20">
+  <img
+    src="coffeeBag1.png"
+    alt="Ethiopia Arabica Coffee Package"
+    className=" object-cover rounded-lg"
+  />
+</div>
 
       {/* Right side - Product details */}
       <div className="w-full lg:w-1/2 space-y-4">
@@ -53,13 +53,14 @@ const CoffeeProductCard = () => {
         <h1 className="text-2xl md:text-3xl font-bold">KBL Coffee</h1>
 
         {/* Description */}
-        <p className="text-gray-600 text-sm md:text-base">
-          Enjoy the rich taste of KBL Coffee with an amazing vanilla aroma and a strong roasting process.
+        <p className="text-gray-600 text-sm md:text-lg">
+        Experience the rich, full-bodied flavor of KBL Coffee, sourced from the lush hills of Rulindo District in northern Rwanda.
+        Carefully cultivated and expertly roasted, our coffee delivers a truly exceptional taste with vibrant notes and a bold finish.
         </p>
 
         {/* Features */}
         <ul className="space-y-2">
-          {["Pure Grade", "Amazing Vanilla Aroma", "Strong Roasting", "Ultra Grinding"].map((feature) => (
+          {["Premium Quality – Sourced from the finest coffee farms in Rulindo", "Citrus & Bourbon Notes", "Bold Roasting Process", "Ultra-Fine Grinding"].map((feature) => (
             <li key={feature} className="flex items-center gap-2">
               <svg className="w-5 h-5 text-[#006242]" viewBox="0 0 20 20" fill="currentColor">
                 <path
@@ -72,13 +73,6 @@ const CoffeeProductCard = () => {
             </li>
           ))}
         </ul>
-
-        {/* Price */}
-        <div className="flex items-center gap-2">
-          <span className="text-gray-400 line-through text-lg md:text-xl">$19.99</span>
-          <span className="text-red-500 text-xl md:text-2xl font-bold">$16.99</span>
-        </div>
-
         {/* Buttons */}
         <div className="flex gap-4 pt-4">
           <button
@@ -87,9 +81,11 @@ const CoffeeProductCard = () => {
           >
             Add to cart
           </button>
+          <a href="/product">
           <button className="px-6 py-2 md:px-8 md:py-3 bg-black text-white rounded-full hover:bg-gray-800 transition-colors">
             More Info
           </button>
+          </a>
         </div>
       </div>
 

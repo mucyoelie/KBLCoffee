@@ -32,8 +32,8 @@ const ProductPage = () => {
     if (!selectedProduct || quantity < 1) return;
 
     const totalPrice = (selectedProduct.price * quantity).toFixed(2);
-    const message = `New Coffee Order!\n\nProduct: ${selectedProduct.title}\nQuantity: ${quantity}\nPrice per unit: $${selectedProduct.price}\nTotal: $${totalPrice}\n\nGet ready to enjoy premium coffee!`;
-    const whatsappURL = `https://wa.me/250787490069?text=${encodeURIComponent(message)}`;
+    const message = `New Coffee Order!\n\nProduct: ${selectedProduct.title}\nQuantity: ${quantity}\nPrice per unit: ${selectedProduct.price} Frw\nTotal: ${totalPrice} Frw\n\nGet ready to enjoy premium coffee!`;
+    const whatsappURL = `https://wa.me/250787255672?text=${encodeURIComponent(message)}`;
     window.open(whatsappURL, '_blank');
     setShowPopup(false);
   };
@@ -50,21 +50,21 @@ const ProductPage = () => {
   };
 
   return (
-    <section className="bg-white py-20 px-5 w-full"> 
+    <section className="bg-transparent py-20 px-5 w-full relative z-10"> 
      <div className="text-center">
   <h2 className="text-4xl font-bold text-[#006242] mb-6">Popular Products</h2>
   <p className="text-gray-500 mb-8">Discover our premium range of coffee products</p>
-  <div className="grid lg:grid-cols-3 grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-8 w-full ">
+  <div className="grid xl:grid-cols-4 lg:grid-cols-2  grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-2 w-full ">
     {products.map((product, index) => (
       <div
         key={index}
         className="relative flex flex-col items-center bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition duration-300 group w-full sm:w-[90%] mx-auto"
       >
-        <div className="relative w-full h-96 overflow-hidden rounded-lg">
+        <div className="relative w-full h-[20rem]  aspect-square rounded-xl ">
           <img
             src={product.image}
             alt={product.title}
-            className="w-full h-full object-cover transition-transform transform hover:scale-110"
+            className="w-full h-full  object-cover transition-transform transform hover:scale-110 px-5 my-2 lg:my-10 lg:px-20 2xl:px-5 2xl:my-2  xl:my-10 xl:px-10 rounded-2xl "
           />
           <button
             onClick={() => handleAddToCart(product)}
@@ -76,7 +76,7 @@ const ProductPage = () => {
         </div>
         <h3 className="mt-4 text-lg font-semibold text-[#006242]">{product.title}</h3>
         <p className="mt-2 text-gray-600 text-center">{product.description}</p>
-        <p className="mt-2 text-lg font-bold text-gray-800">${product.price.toFixed(2)}</p>
+        <p className="mt-2 text-lg font-bold text-gray-800">{product.price.toFixed(2)}Frw</p>
         <div className="flex items-center mt-2">
           {[...Array(5)].map((_, i) => (
             <span
@@ -104,7 +104,7 @@ const ProductPage = () => {
               min="1"
               className="w-full p-2 border rounded text-center"
             />
-            <p className="mt-4 text-lg font-bold text-gray-800">Total: ${(selectedProduct.price * quantity).toFixed(2)}</p>
+            <p className="mt-4 text-lg font-bold text-gray-800">Total: {(selectedProduct.price * quantity).toFixed(2)} Frw</p>
             <div className="mt-4 flex justify-between">
               <button
                 onClick={() => setShowPopup(false)}

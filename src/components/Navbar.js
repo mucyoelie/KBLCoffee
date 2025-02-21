@@ -22,24 +22,24 @@ function Navbar() {
         {/* Desktop Links */}
         <ul className="hidden md:flex space-x-6">
           <li className="flex items-center">
-          <Icon name="icon-coffee-maker-svgrepo-com" className="text-3xl text-[#006242]" />
-            <Link to="/" className="hover:text-green-400">Home</Link>
+          <Link to="/"><Icon name="icon-coffee-maker-svgrepo-com" className="text-3xl text-[#006242]" /></Link>
+            <Link to="/" className="hover:text-green-600">Home</Link>
           </li>
           <li className="flex items-center">
-          < Icon name="icon-speech-bubble-icon-svgrepo-com" className="text-4xl text-[#006242]" />
-            <Link to="/about" className="hover:text-green-400 ">About Us</Link>
+          <Link to="/about">< Icon name="icon-speech-bubble-icon-svgrepo-com" className="text-4xl text-[#006242]" /></Link>
+            <Link to="/about" className="hover:text-green-600 ">About Us</Link>
           </li>
           <li className="flex items-center">
-       < Icon name="icon-Coffee6-icon" className="text-2xl text-[#006242]" />
-            <Link to="/product" className="hover:text-green-400">Product</Link>
+          <Link to="/product">< Icon name="icon-Coffee6-icon" className="text-2xl text-[#006242]" /></Link>
+           <Link to="/product" className="hover:text-green-600">Product</Link>
           </li>
           <li className="flex items-center">
-          <Icon name="icon-Coffee14-icon" className="text-2xl text-[#006242] px-3" />
-            <Link to="/blog" className="hover:text-green-400">Blog</Link>
+          <Link to="/blog"><Icon name="icon-Coffee14-icon" className="text-2xl text-[#006242] px-3" /></Link>
+            <Link to="/blog" className="hover:text-green-600">Blog</Link>
           </li>
           <li className="flex items-center">
-          <Icon name="icon-Coffee13-icon" className="text-2xl text-[#006242] px-2 pt-2" />
-            <Link to="/contact" className="hover:text-green-400">Contact Us</Link>
+          <Link to="/contact"><Icon name="icon-Coffee13-icon" className="text-2xl text-[#006242] px-2 pt-2" /></Link>
+            <Link to="/contact" className="hover:text-green-600">Contact Us</Link>
           </li>
         </ul>
 
@@ -63,24 +63,24 @@ function Navbar() {
       {isOpen && (
         <ul className="md:hidden flex flex-col items-start bg-white shadow-md absolute top-[5rem] left-0 w-full py-4 space-y-8 z-50 ">
           <li className="flex items-center ">
-          <Icon name="icon-coffee-maker-svgrepo-com" className="text-3xl text-[#006242] " />
-            <Link to="/" className="hover:text-green-400" onClick={toggleMenu}>Home</Link>
+          <Link to="/"><Icon name="icon-coffee-maker-svgrepo-com" className="text-3xl text-[#006242] " /></Link>
+            <Link to="/" className="hover:text-green-600" onClick={toggleMenu}>Home</Link>
           </li>
           <li className="flex items-center">
-          < Icon name="icon-speech-bubble-icon-svgrepo-com" className="text-3xl text-[#006242]" />
-            <Link to="/about" className="hover:text-green-400" onClick={toggleMenu}>About Us</Link>
+          <Link to="/about">< Icon name="icon-speech-bubble-icon-svgrepo-com" className="text-3xl text-[#006242]" /></Link>
+            <Link to="/about" className="hover:text-green-600" onClick={toggleMenu}>About Us</Link>
           </li>
           <li className="flex items-center ">
-          < Icon name="icon-Coffee6-icon" className="text-2xl text-[#006242]" />
-            <Link to="/product" className="hover:text-green-400" onClick={toggleMenu}>Product</Link>
+          <Link to="/product">< Icon name="icon-Coffee6-icon" className="text-2xl text-[#006242]" /></Link>
+            <Link to="/product" className="hover:text-green-600" onClick={toggleMenu}>Product</Link>
           </li>
           <li className="flex items-center ">
-          <Icon name="icon-Coffee14-icon" className="text-2xl text-[#006242] px-3" />
-            <Link to="/blog" className="hover:text-green-400" onClick={toggleMenu}>Blog</Link>
+          <Link to="/blog"><Icon name="icon-Coffee14-icon" className="text-2xl text-[#006242] px-3" /></Link>
+            <Link to="/blog" className="hover:text-green-600" onClick={toggleMenu}>Blog</Link>
           </li>
           <li className="flex items-center">
-          <Icon name="icon-Coffee13-icon" className="text-2xl text-[#006242] px-2 pt-2" />
-            <Link to="/contact" className="hover:text-green-400" onClick={toggleMenu}>Contact Us</Link>
+          <Link to="/contact"><Icon name="icon-Coffee13-icon" className="text-2xl text-[#006242] px-2 pt-2" /></Link>
+            <Link to="/contact" className="hover:text-green-600" onClick={toggleMenu}>Contact Us</Link>
           </li>
         </ul>
       )}

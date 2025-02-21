@@ -1,54 +1,36 @@
 [
   {
-      "title": "Brazilian Coffee",
-      "image": "Coffee1.jpg",
-      "description": "Rich and aromatic coffee from Brazil, perfect for your mornings.",
-      "price": 12.99,
+      "title": "KBL Ground Coffee (250g)",
+      "image": "Coffee40.png",
+      "description": " Rich and aromatic ground coffee, perfect for a smooth and flavorful brew",
+      "price": 5000,
       "rating": 4.5,
       "type": "Beans"
     },
     {
-      "title": "Ethiopian Coffee",
-      "image": "Coffee1.jpg",
-      "description": "Unique and fruity Ethiopian coffee with bold flavors.",
-      "price": 14.99,
+      "title": "KBL Ground Coffee (500g)",
+      "image": "Coffee40.png",
+      "description": "A balanced and full-bodied coffee, carefully roasted for optimal taste.",
+      "price": 9000,
       "rating": 4.7,
       "type": "Beans"
     },
     {
-      "title": "Colombian Coffee",
-      "image": "Coffee1.jpg",
-      "description": "A smooth and balanced coffee sourced from Colombia.",
-      "price": 13.49,
+      "title": "KBL Ground Coffee (1KG)",
+      "image": "Coffee41.png",
+      "description": " Premium quality ground coffee, ideal for coffee lovers who enjoy a consistent and bold flavor.",
+      "price": 18000,
       "rating": 4.6,
       "type": "Beans"
     },
     {
-      "title": "Kenyan Coffee",
-      "image": "Coffee1.jpg",
-      "description": "Full-bodied Kenyan coffee with hints of berry flavors.",
-      "price": 15.99,
-      "rating": 4.8,
-      "package": "500g",
-      "type": "ground"
-    },
-    {
-      "title": "Arabica Coffee",
-      "image": "Coffee1.jpg",
-      "description": "Premium Arabica coffee beans with a smooth finish.",
-      "price": 16.99,
-      "rating": 4.9,
-      "package": "250g",
-      "type": "ground"
-    },
-    {
-      "title": "Robusta Coffee",
-      "image": "Coffee1.jpg",
-      "description": "Strong and bold Robusta coffee to kickstart your day.",
-      "price": 11.99,
-      "rating": 4.3,
-      "package": "1kg",
-      "type": "ground"
+      "title": "KBL Coffee Whole Beans (1KG)",
+      "image": "Coffee43.png",
+      "description": "Whole coffee beans for those who prefer grinding fresh for every cup. Available in",
+      "price": 20000,
+      "rating": 4.6,
+      "type": "Beans"
     }
+    
   ]
 

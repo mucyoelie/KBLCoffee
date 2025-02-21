@@ -1,9 +1,9 @@
 import React from "react";
 import {
-  FaTwitter,
-  FaFacebook,
+  FaWhatsapp,
+  FaTiktok,
   FaInstagram,
-  FaYoutube,
+  FaLinkedin,
 } from "react-icons/fa";
 
 const Footer = () => {
@@ -20,34 +20,46 @@ const Footer = () => {
               className="w-[20rem] sm:w-24 lg:w-[14rem] rounded-lg xl:px-10"
             />
             <p className=" text-sm sm:text-base lg:text-lg xl:px-10">
-              Etiam consequat sem ullamcorper, euismod metus sit amet,
-              tristique justo. Vestibulum mattis, nisi ut.
+            <span className="text-[#006242] font-bold">KBL COFFEE – </span>Passionate, socially conscious roasters sourcing exclusively 
+            from smallholder women in Rwanda. Great coffee, greater impact.
             </p>
             <div className="flex space-x-4 xl:px-10">
-              <a
-                href="/"
-                className="text-[#006242] text-xl hover:text-green-600"
-              >
-                <FaTwitter />
-              </a>
-              <a
-                href="/"
-                className="text-[#006242] text-xl hover:text-green-600"
-              >
-                <FaFacebook />
-              </a>
-              <a
-                href="/"
-                className="text-[#006242] text-xl hover:text-green-600"
-              >
-                <FaInstagram />
-              </a>
-              <a
-                href="/"
-                className="text-[#006242] text-xl hover:text-green-600"
-              >
-                <FaYoutube />
-              </a>
+                 {/* WhatsApp */}
+                   <a
+                     href="https://wa.me/250787255672"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     className="text-green-500 text-3xl hover:text-green-600 transition hover:rounded-full"
+                   >
+                     <FaWhatsapp />
+                   </a>
+              {/* Tiktok */}
+                   <a
+                     href="https://https://www.tiktok.com/@kbl.coffee"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     className="text-blue-500 text-3xl hover:text-blue-600 transition"
+                   >
+                     <FaTiktok />
+                   </a>
+               {/* Instagram */}
+                    <a
+                      href="https://www.instagram.com/kbl.coffee/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-pink-500 text-3xl hover:text-pink-600 transition"
+                    >
+                      <FaInstagram />
+                      </a>
+              {/* LinkedIn */}
+                   <a
+                     href="https://www.linkedin.com/in/yourprofile"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     className="text-blue-600 text-3xl hover:text-blue-700 transition"
+                   >
+                     <FaLinkedin />
+                   </a>
             </div>
           </div>
 
@@ -65,7 +77,7 @@ const Footer = () => {
                 <br />
                 +250787255672
                 <br />
-                +250787490069
+                +250795019523
               </p>
             </div>
           </div>

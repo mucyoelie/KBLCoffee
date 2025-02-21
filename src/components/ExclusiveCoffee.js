@@ -8,16 +8,14 @@ const ExclusiveCoffee = () => {
         {/* Text Content */}
         <div className="space-y-6">
           <h2 className="text-[#006242] font-black text-2xl md:text-3xl lg:text-4xl">
-            Arabica & Robusta
+          Finest Arabica coffee
           </h2>
           <h1 className="text-black font-black text-3xl md:text-4xl lg:text-5xl">
-            Exclusive Planted Coffee
+          Women-Led, Sustainable Coffee
           </h1> 
           <p className="text-gray-500 text-sm md:text-base lg:text-lg">
-            Maecenas dapibus mattis eros, at fermentum sapien malesuada sit
-            amet. Quisque in sollicitudin eros. Aliquam eget sapien sed orci
-            accumsan interdum at ac lorem ut ante pulvinar finibus non non
-            metus.
+          KBL Coffee prioritizes <span className="text-[#006242] font-bold">women empowerment and ethical agro-industry practices</span>, ensuring <span className="text-[#006242] font-bold">full traceability </span>from farm to cup. 
+          Every purchase supports farmers directly, promoting sustainability and fair trade.
           </p>
           {/* Icons and Information */}
           <div className="space-y-3">
@@ -55,13 +53,13 @@ const ExclusiveCoffee = () => {
         {/* Image Section */}
         <div className="relative">
           <img
-            src="Coffee10.jpg"
+            src="Cofee50.png"
             alt="Coffee"
             className="w-full h-auto rounded-lg"
           />
           {/* Badge */}
-          <div className="absolute top-10 left-0 sm:top-16 md:top-20 lg:top-24 xl:top-28 w-[10rem] sm:w-[12rem] lg:w-[15rem] h-[10rem] sm:h-[12rem] lg:h-[15rem] rounded-full border-2 border-dashed border-[#006242] flex items-center justify-center">
-            <div className="bg-white xl:mb-[30%] xl:mr-[30%] rounded-full w-16 h-16 sm:w-[10rem] sm:h-[10rem] lg:w-32 lg:h-32 xl:w-40 xl:h-40 flex items-center justify-center shadow-md transform translate-x-1/4 translate-y-1/4">
+          <div className="absolute top-10 left-0 sm:top-16 md:top-20 lg:top-5 xl:top-28 w-[18rem] h-[18rem] sm:w-[12rem] lg:w-[15rem] h-[10rem] sm:h-[12rem] lg:h-[15rem] md:w-[14rem] md:h-[14rem ] rounded-full border-2 border-dashed border-[#006242] flex items-center justify-center">
+            <div className="bg-white xl:mb-[30%] lg:mb-[35%] ml-[-40%] mb-[45%] lg:ml-[-35%] xl:mr-[-3%] rounded-full w-[14rem] h-[14rem] sm:w-[20rem] sm:h-[20rem] lg:w-[12rem] lg:h-[12rem] md:w-[12rem] md:h-[12rem] xl:w-40 xl:h-40 flex items-center justify-center shadow-md transform translate-x-1/4 translate-y-1/4">
               <div className="text-center ">
                 <h1 className="text-gray-500 text-sm sm:text-base lg:text-lg font-bold">
                   Since
